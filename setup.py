@@ -5,7 +5,9 @@ class InstallCommand(install):
  """Override the default Install class to run a custom command post-install."""
 
  def run(self):
+ # Call parent's method (install the package)
  install.run(self)
+
  # Import subprocess module to execute a shell command
  import subprocess as sp
  
